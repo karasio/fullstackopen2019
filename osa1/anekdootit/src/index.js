@@ -1,20 +1,19 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 
-const App = (props) => {
+const App = ({ anecdotes }) => {
   const [selected, setSelected] = useState(0);
+  const [votes, setShowVotes] = useState(new Array(6).fill(0));
 
   const nextRand = () => (
-      setSelected( Math.floor(Math.random()*anecdotes.length))
+      setSelected( Math.floor(Math.random() * anecdotes.length))
   );
 
   const vote = () => {
-/*    const copy = {...votes};
+    const copy = [...votes];
     copy[selected] += 1;
-    console.log(copy)*/
-  votes[selected] += 1;
-  console.log(votes);
-  }
+    setShowVotes(copy);
+  };
 
   return (
       <div>
@@ -31,15 +30,11 @@ const App = (props) => {
           <Results anecdotes={anecdotes} votes={votes}/>
         </div>
       </div>
-
   )
 };
 
 const Results = ({anecdotes, votes}) => {
-  function hasChanged(value) {
-    return value === 0;
-  }
-  if(votes.every(hasChanged)){
+  if (votes.every(value => value === 0)){
     return (
         <p>
           no votes yet
@@ -50,7 +45,7 @@ const Results = ({anecdotes, votes}) => {
   let biggest = -Infinity;
   let biggestIndex = -Infinity;
 
-  for(let i = 0; i < votes.length; i++){
+  for (let i = 0; i < votes.length; i++){
     if (votes[i] > biggest) {
       biggest = votes[i];
       biggestIndex = i;
@@ -65,8 +60,6 @@ const Results = ({anecdotes, votes}) => {
   )
 };
 
-const votes = new Array(6).fill(0);
-
 const anecdotes = [
   '0 If it hurts, do it more often',
   '1 Adding manpower to a late software project makes it later!',
@@ -75,14 +68,8 @@ const anecdotes = [
   '4 Premature optimization is the root of all evil.',
   '5 Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.'
 ];
+
 ReactDOM.render(
-    <App anecdotes={anecdotes} votes={votes}/>,
+    <App anecdotes={anecdotes} />,
     document.getElementById('root')
 );
-
-/*  const addVote = () => {
-    setVotes([...votes, {
-      id: votes[selected],
-      value: votes[selected]+1
-    }])
-  };*/
