@@ -3,7 +3,7 @@ import React from 'react';
 const Course = (props) => {
   console.log('Course', props);
 
-  const something = () => props.courses.map(course =>
+  const courseInfo = () => props.courses.map(course =>
       <div key={course.name}>
         <Header course={course} />
         <Content course={course}/>
@@ -12,7 +12,7 @@ const Course = (props) => {
   )
   return (
       <>
-        {something()}
+        {courseInfo()}
         </>
   )
 };
