@@ -1,0 +1,32 @@
+.notification {
+    background: lightgray;
+    font-size: 20px;
+    color: forestgreen;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.error {
+    background: lightgray;
+    font-size: 20px;
+    color: red;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+h1, h2, h3 {
+    color: darkslateblue;
+}
+
+body {
+    background: aliceblue;
+}

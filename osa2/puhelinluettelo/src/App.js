@@ -6,6 +6,7 @@ const App = () => {
   const [newName, setNewName] = useState('');
   const [newNumber, setNewNumber] = useState('');
   const [filterValue, setFilterValue] = useState('');
+  const [notification, setNotification] = useState({msg: null, sort: null});
 
   useEffect( () => {
     numberService
@@ -34,13 +35,11 @@ const App = () => {
   };
 
   const handleFilter = (event) => {
-    //console.log(event.target.value)
     setFilterValue(event.target.value);
   };
 
   const addPerson = (event) => {
     event.preventDefault();
-    //console.log('button clicked ', event.target);
 
     const name = capitalize({ newName });
     const personObject =
@@ -65,21 +64,34 @@ const App = () => {
             setPersons(person.concat(returnedPerson))
           setNewName('');
           setNewNumber('');
+          setNotification({msg: `Added ${returnedPerson.name}`, sort: 'info'});
+          setTimeout(() => {
+            setNotification({msg:null, sort:null});
+          }, 5000)
       })
     } else {
       const changeNumber = window.confirm(`${newName} is already added to phonebook, replace old number with a new one?`);
       if (changeNumber) {
-        console.log('changenumber', changeNumber);
-
         numberService
             .update(personUpdated.id, personObject)
             .then (() => {
+
+              setNotification({msg: `Updated phone number of ${personObject.name} to ${personObject.number}`, sort: "info"});
+              setTimeout(() => {
+                setNotification({msg:null, sort:null});
+              }, 5000);
               numberService
                   .getAll()
                   .then(returnedPerson => {
                     setPersons(returnedPerson)
               })
+        })
+            .catch(error => {
+            setNotification({msg: `Information of ${personObject.name} has been removed already`, sort: "error"});
+            setTimeout(() => {
+              setNotification({msg:null, sort:null});
 
+            }, 5000);
         })
       }
     }
@@ -90,28 +102,27 @@ const App = () => {
   const deletePerson = id => {
     const deletablePerson = person.find(p => p.id === id);
     const sureToDelete = window.confirm(`Delete ${deletablePerson.name}?`);
-    //console.log(id);
 
   if(sureToDelete) {
     numberService
     .remove(id)
     .then(() => {
+      setNotification(`Removed ${deletablePerson.name}`);
+      setTimeout(() => {
+        setNotification(null);
+      }, 50000);
       numberService
       .getAll()
       .then(returnedPerson => {
-        setPersons(returnedPerson)
+        setPersons(returnedPerson);
       })
     })
-  }
-
-  ;
-
-
-  };
+  }};
 
   return (
       <div>
         <h2>Phonebook</h2>
+        <Notification message={notification}/>
         <Filter filterValue={filterValue} handleFilter = {handleFilter}/>
         <h3>Add a new</h3>
         <PersonForm
@@ -167,18 +178,43 @@ const PersonForm = ({ addPerson, newName, handlePersonChange, newNumber, handleN
 };
 
 const Numbers = ({ filterValue, person, deletePerson }) => {
-  console.log(person);
   const namesToShow = person.filter(person => person.name.toLowerCase().includes(filterValue));
 
   const numbers = () => namesToShow.map( dude =>
-      <p key={dude.name}>
+      <li key={dude.name}>
         {dude.name} {dude.number}
         <button onClick={() => deletePerson(dude.id)}>delete</button>
-      </p>
+      </li>
   );
   return (
       <div>
+        <ul>
         {numbers()}
+        </ul>
+      </div>
+  )
+};
+
+const Notification = ({ message }) => {
+  if (message.sort === 'error' ) {
+    console.log('errorissa');
+    return (
+        <div className="error">
+          {message.msg}
+        </div>
+    )
+  }
+
+  if(message.msg === null) {
+    console.log('ei mittään');
+
+    return null;
+  }
+
+  console.log('normiviesti');
+  return (
+      <div className="notification">
+        {message.msg}
       </div>
   )
 };
