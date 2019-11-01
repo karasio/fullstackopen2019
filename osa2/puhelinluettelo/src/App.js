@@ -1,15 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
 const App = () => {
-  const [person, setPersons] = useState ([
-      { name: 'Arto Hellas', number: '0400123456' },
-      { name: 'Ada Lovelace', number: '0500123455' },
-      { name: 'Dan Abramov', number: '0451234567' },
-      { name: 'Isaac Asimov', number: '04401234455' }
-  ]);
+  const [person, setPersons] = useState ([]);
   const [newName, setNewName] = useState('');
   const [newNumber, setNewNumber] = useState('');
   const [filterValue, setFilterValue] = useState('');
+
+  useEffect(() => {
+    console.log('effect');
+    axios
+        .get('http://localhost:3001/persons')
+        .then(response => {
+          setPersons(response.data);
+    })
+  }, []);
 
   const capitalize = ({ newName }) => {
     return newName.toLowerCase()
