@@ -32,37 +32,14 @@ function App() {
 
 const Countries = ({ countries, filterValue, setFilterValue }) => {
   const [weather, setWeather] = useState('');
-
-  console.log(filterValue);
-  const countriesToShow = countries.filter(country => country.name.toLowerCase().includes(filterValue));
-  console.log('countriesTOSHOW', countriesToShow);
-
-  const Weather = (props) => {
-    //console.log('sääpropsi',props.value);
-    const url = 'http://api.weatherstack.com/current?access_key=f3ad331331d346b71640eb5c75a84409&query=' + props.value;
-    //console.log('url', url);
-
-    useEffect(() => {
-      axios
-      .get(url)
-      .then(response => setWeather(response.data))
-    }, []);
-
-    console.log(weather);
-    return (
-        <div>
-          <h3>Weather in {props.value}</h3>
-          <p>temperature {weather.temperature}</p>
-        </div>
-    )
-  };
+  const filterValueToLowerCase = filterValue.toLowerCase();
+  const countriesToShow = countries.filter(country => country.name.toLowerCase().includes(filterValueToLowerCase));
 
   const small = {
     height: '100px'
   };
 
   if(countriesToShow.length > 10) {
-    console.log('enempi ku 10');
     return (
         <div>
           Too many matches, please specify search criteria!
@@ -72,7 +49,6 @@ const Countries = ({ countries, filterValue, setFilterValue }) => {
   let countryList;
 
   if (countriesToShow.length === 1) {
-    console.log('vain 1')
     countryList = () => countriesToShow.map(country =>
           <div key={country.name}>
             <h1>{country.name}</h1>
@@ -84,11 +60,10 @@ const Countries = ({ countries, filterValue, setFilterValue }) => {
               <li key={value.iso639_1}>{value.name}</li>)}
             </ul>
             <img src={country.flag} style={small} alt={`flag of ${country.name}`}/>
-            {/*<Weather value={country.capital}/>*/}
+            <Weather country={country} weather={weather} setWeather={setWeather}/>
           </div>
       );
   } else {
-    console.log('muut määrät maita')
     countryList = () => countriesToShow.map(country =>
         <div key={country.name}>
           {country.name} <button onClick={handleButtonClick.bind(this, country.name)} value={country.name}>show</button>
@@ -97,11 +72,8 @@ const Countries = ({ countries, filterValue, setFilterValue }) => {
   }
 
   const handleButtonClick = (props) => {
-    console.log(props);
     setFilterValue(props);
   };
-
-  console.log('SÄÄ ',weather);
 
   return (
       <div>
@@ -110,6 +82,41 @@ const Countries = ({ countries, filterValue, setFilterValue }) => {
   )
 
 };
+
+const Weather = ({country, weather, setWeather}) => {
+  //console.log('sääpropsi',props.value);
+  const url = 'http://api.weatherstack.com/current?access_key=3af74978960c2a744ba2372d42673f6a&query=' + country.capital;
+  //console.log('url', url);
+
+  
+  useEffect(() => {
+    axios
+    .get(url)
+    .then(response => {
+      setWeather(response.data)
+      console.log('response data',response.data);
+
+    })
+        .catch(error => {
+          console.log("ERROR", error);
+
+    })
+  }, []);
+
+  if(weather.current) {
+    return (
+        <div>
+          <h3>Weather in {country.capital}</h3>
+          <p>temperature {weather.current.temperature}º Celsius</p>
+          <img src={weather.current.weather_icons[0]} alt={weather.current.weather_descriptions[0]}/>
+          <p>wind: {weather.current.wind_speed} kph direction {weather.current.wind_dir}</p>
+        </div>
+    )
+  } else {
+    return null;
+  }
+  };
+
 
 export default App;
 
