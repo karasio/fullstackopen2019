@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import numberService from './services/numbers'
 
+
 const App = () => {
   const [person, setPersons] = useState ([]);
   const [newName, setNewName] = useState('');
@@ -50,14 +51,16 @@ const App = () => {
 
     let onList = false;
     let personUpdated;
+
     person.forEach(value => {
         if (value.name === personObject.name) {
           onList=true;
           personUpdated = value;
+          console.log("rivi58",personUpdated, "onlist", onList);
         }
     });
 
-    if (!onList) {
+    if (!onList) {              // TOIMII
       numberService
           .create(personObject)
           .then(returnedPerson => {
@@ -71,6 +74,7 @@ const App = () => {
       })
     } else {
       const changeNumber = window.confirm(`${newName} is already added to phonebook, replace old number with a new one?`);
+      console.log("changeNumner", changeNumber);
       if (changeNumber) {
         numberService
             .update(personUpdated.id, personObject)
@@ -107,10 +111,10 @@ const App = () => {
     numberService
     .remove(id)
     .then(() => {
-      setNotification(`Removed ${deletablePerson.name}`);
+      setNotification({msg: `Removed ${deletablePerson.name}`, sort: "info"});
       setTimeout(() => {
-        setNotification(null);
-      }, 50000);
+        setNotification({msg: null, sort: null});
+      }, 5000);
       numberService
       .getAll()
       .then(returnedPerson => {
@@ -206,12 +210,12 @@ const Notification = ({ message }) => {
   }
 
   if(message.msg === null) {
-    console.log('ei mittään');
+    console.log('ei virheitä');
 
     return null;
   }
 
-  console.log('normiviesti');
+  console.log('notifikaatio');
   return (
       <div className="notification">
         {message.msg}
