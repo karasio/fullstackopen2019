@@ -76,6 +76,7 @@ app.get('/notes', (req, res) => {
 
 app.get('/notes/:id', (request, response) => {
   const id = Number(request.params.id);
+  console.log('tööt');
   const note = notes.find(note => note.id === id);
   if (note) {
     response.json(note);
