@@ -56,7 +56,7 @@ const App = () => {
         if (value.name === personObject.name) {
           onList=true;
           personUpdated = value;
-          console.log("rivi58",personUpdated, "onlist", onList);
+          //console.log("rivi58",personUpdated, "onlist", onList);
         }
     });
 
@@ -69,12 +69,19 @@ const App = () => {
           setNewNumber('');
           setNotification({msg: `Added ${returnedPerson.name}`, sort: 'info'});
           setTimeout(() => {
-            setNotification({msg:null, sort:null});
+            setNotification({msg: null, sort: null});
           }, 5000)
+      })
+          .catch(error => {
+            console.log('VIKA OLI TÄSÄ',error.response.data.error);
+            setNotification({msg: error.response.data.error, sort: "error"});
+            setTimeout(() => {
+              setNotification({msg: null, sort: null})
+            }, 5000)
       })
     } else {
       const changeNumber = window.confirm(`${newName} is already added to phonebook, replace old number with a new one?`);
-      console.log("changeNumner", changeNumber);
+      console.log("changeNumber", changeNumber);
       if (changeNumber) {
         numberService
             .update(personUpdated.id, personObject)
@@ -82,7 +89,7 @@ const App = () => {
 
               setNotification({msg: `Updated phone number of ${personObject.name} to ${personObject.number}`, sort: "info"});
               setTimeout(() => {
-                setNotification({msg:null, sort:null});
+                setNotification({msg: null, sort: null});
               }, 5000);
               numberService
                   .getAll()
@@ -93,9 +100,16 @@ const App = () => {
             .catch(error => {
             setNotification({msg: `Information of ${personObject.name} has been removed already`, sort: "error"});
             setTimeout(() => {
-              setNotification({msg:null, sort:null});
+              setNotification({msg: null, sort: null});
 
             }, 5000);
+        })
+            .catch(error => {
+              console.log('numeronvaihdossa vika on', error.response.data.error);
+              setNotification({msg: error.response.data.error, sort: 'error'});
+              setTimeout(() => {
+                setNotification({msg: null, sort: null})
+              }, 5000);
         })
       }
     }
