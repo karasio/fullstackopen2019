@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "watch": "nodemon index.js",
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "start": "cross-env NODE-ENV=production node index.js",
+    "watch": "cross-env NODE-ENV=development nodemon index.js",
+    "lint": "eslint .",
+    "test": "NODE_ENV=test jest --verbose --runInBand"
   },
   "author": "Katri Rasio",
   "license": "ISC",
@@ -14,10 +15,17 @@
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
+    "lodash": "^4.17.15",
     "mongoose": "^5.5.12"
   },
   "devDependencies": {
+    "cross-env": "^6.0.3",
     "eslint": "^5.16.0",
-    "nodemon": "^1.19.1"
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
