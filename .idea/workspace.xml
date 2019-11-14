@@ -1,47 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6775e6c5-8f3a-478a-bc82-4bfcbbbc46e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/eslintPlugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/eslintPlugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa2/notes-frontend/src/services/notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa2/notes-frontend/src/services/notes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/precache-manifest.31d66c07acde46b89d7c0ec469667139.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/precache-manifest.4d4913839aa881313602a554b1a0078e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/css/main.e8b4ff14.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/css/main.e8b4ff14.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/2.9720d768.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/2.9720d768.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/main.63e2bd8e.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/main.63e2bd8e.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/main.7fd1a873.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/main.7fd1a873.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/runtime-main.930cd484.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/runtime-main.930cd484.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa4/blogilista/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa4/blogilista/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa4/blogilista/controllers/blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/controllers/blogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa4/blogilista/models/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/models/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa4/blogilista/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa4/blogilista/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa4/blogilista/tests/bloglista_api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/tests/bloglista_api.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa4/blogilista/tests/test_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/tests/test_helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa4/blogilista/utils/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/utils/middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa4/part3-notes-backend" beforeDir="false" />
-    </list>
+    <list default="true" id="6775e6c5-8f3a-478a-bc82-4bfcbbbc46e2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -438,7 +398,7 @@
       <workItem from="1573327395374" duration="457000" />
       <workItem from="1573330929992" duration="4637000" />
       <workItem from="1573393289112" duration="56929000" />
-      <workItem from="1573646625653" duration="16746000" />
+      <workItem from="1573646625653" duration="16995000" />
     </task>
     <servers />
   </component>
