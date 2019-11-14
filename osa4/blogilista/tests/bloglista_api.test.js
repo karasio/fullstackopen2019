@@ -4,6 +4,7 @@ const app = require('../app');
 const api = supertest(app);
 
 const Blog = require('../models/blog');
+const User = require('../models/user');
 const helper = require('./test_helper.js');
 
 describe('when there is initially something saved', () => {
@@ -172,7 +173,7 @@ describe('when there is initially something saved', () => {
       expect(modifiedBlog.body.likes).toBe(originalLikes);
     });
 
-    test.only('title can not be changed', async () => {
+    test('title can not be changed', async () => {
       const originalBlogs = await helper.blogsInDb();
       let blogToModify = originalBlogs[0];
       const originalTitle = blogToModify.title;
@@ -184,12 +185,125 @@ describe('when there is initially something saved', () => {
         .send(blogToModify);
 
       const modifiedBlog = await api.get(`/api/blogs/${blogToModify.id}`);
-      console.log('modified', modifiedBlog.body);
+      //console.log('modified', modifiedBlog.body);
       expect(modifiedBlog.body.title).toEqual(originalTitle);
     });
   });
 });
 
+describe('user testing', () => {
+  beforeEach(async () => {
+    await User.deleteMany({});
+    const user = new User({ username: 'root', password: 'sekret' });
+    await user.save();
+  });
+
+  test('creation succeeds with a fresh username', async () => {
+    const originalUsers = await helper.usersInDb();
+
+    const newUser = {
+      username: 'jannepuu',
+      name: 'Janne Puumaa',
+      password: 'hottentotti17'
+    };
+
+    await api
+      .post('/api/users')
+      .send(newUser)
+      .expect(200)
+      .expect('Content-Type', /application\/json/);
+
+    const newUsers = await helper.usersInDb();
+    expect(newUsers.length).toBe(originalUsers.length + 1);
+
+    const usernames = newUsers.map(u => u.username);
+    expect(usernames).toContain(newUser.username);
+  });
+
+  test('creation fails with correct statuscode if username exists already', async () => {
+    const originalUsers = await helper.usersInDb();
+
+    const newUser = {
+      username: 'root',
+      name: 'megauser',
+      password: 'salasana'
+    };
+
+    const result = await api
+      .post('/api/users')
+      .send(newUser)
+      .expect(400)
+      .expect('Content-Type', /application\/json/);
+
+    expect(result.body.error).toContain('`username` to be unique');
+
+    const newUsers = await helper.usersInDb();
+    expect(newUsers.length).toBe(originalUsers.length);
+  });
+
+  test('creation fails with too short password', async () => {
+    const originalUsers = await helper.usersInDb();
+
+    const newUser = {
+      username: 'megaman22',
+      name: 'megauser',
+      password: 'ii'
+    };
+
+    const result = await api
+      .post('/api/users')
+      .send(newUser)
+      .expect(401)
+      .expect('Content-Type', /application\/json/);
+
+    expect(result.body.error).toContain('password (min. 3 characters) needs to be defined');
+
+    const newUsers = await helper.usersInDb();
+    expect(newUsers.length).toBe(originalUsers.length);
+  });
+
+  test('creation fails without a username', async () => {
+    const originalUsers = await helper.usersInDb();
+
+    const newUser = {
+      name: 'megauser',
+      password: 'ii3333'
+    };
+
+    const result = await api
+      .post('/api/users')
+      .send(newUser)
+      .expect(400)
+      .expect('Content-Type', /application\/json/);
+
+    expect(result.body.error).toContain('`username` is required');
+
+    const newUsers = await helper.usersInDb();
+    expect(newUsers.length).toBe(originalUsers.length);
+  });
+
+  test.only('add blog with user', async () => {
+    const originalBlogs = await helper.blogsInDb();
+    const users = await helper.usersInDb();
+    const someUser = users[0];
+
+    const newBlog = {
+      title: 'Perez Hilton - Celebrity news',
+      author: 'Perez Hilton',
+      url: 'https://perezhilton.com/',
+      userId: someUser.id
+    };
+
+    await api
+      .post('/api/blogs')
+      .send(newBlog)
+      .expect(200)
+      .expect('Content-Type', /application\/json/);
+
+    const newBlogs = await helper.blogsInDb();
+    expect(newBlogs.length).toBe(originalBlogs.length + 1);
+  });
+});
 
 
 afterAll(() => {

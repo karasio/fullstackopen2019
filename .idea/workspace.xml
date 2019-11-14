@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/osa1/hiekkalaatikko/src/index.js" line="3" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="6775e6c5-8f3a-478a-bc82-4bfcbbbc46e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/eslintPlugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/eslintPlugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa2/notes-frontend/src/services/notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa2/notes-frontend/src/services/notes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/precache-manifest.31d66c07acde46b89d7c0ec469667139.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/precache-manifest.4d4913839aa881313602a554b1a0078e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/css/main.e8b4ff14.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/css/main.e8b4ff14.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/2.9720d768.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/2.9720d768.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/main.63e2bd8e.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/main.63e2bd8e.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/main.7fd1a873.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/main.7fd1a873.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/runtime-main.930cd484.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/build/static/js/runtime-main.930cd484.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa3/notes-backend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/blogilista/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/blogilista/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/blogilista/controllers/blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/controllers/blogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/blogilista/models/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/models/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/blogilista/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/blogilista/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/blogilista/tests/bloglista_api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/tests/bloglista_api.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/blogilista/tests/test_helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/tests/test_helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/blogilista/utils/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/utils/middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/part3-notes-backend" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,112 +51,320 @@
   <component name="FavoritesManager">
     <favorites_list name="fullStack" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/osa1/unicafe/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/osa1/hiekkalaatikko/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="18" lean-forward="true" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/osa1/part1/public/index.html" />
-        <option value="$PROJECT_DIR$/osa1/kurssitiedot/kurssitiedot/public/index.html" />
-        <option value="$PROJECT_DIR$/osa1/kurssitiedot/kurssitiedot/src/index.js" />
-        <option value="$PROJECT_DIR$/osa1/part1/src/index.js" />
-        <option value="$PROJECT_DIR$/osa1/hiekkalaatikko/src/index.js" />
-        <option value="$PROJECT_DIR$/osa1/unicafe/src/index.js" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="50" />
-    <option name="y" value="29" />
-    <option name="width" value="1390" />
-    <option name="height" value="864" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="fullStack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullStack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullStack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullStack" type="462c0819:PsiDirectoryNode" />
-              <item name="osa1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullStack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullStack" type="462c0819:PsiDirectoryNode" />
-              <item name="osa1" type="462c0819:PsiDirectoryNode" />
-              <item name="hiekkalaatikko" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullStack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullStack" type="462c0819:PsiDirectoryNode" />
-              <item name="osa1" type="462c0819:PsiDirectoryNode" />
-              <item name="hiekkalaatikko" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullStack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullStack" type="462c0819:PsiDirectoryNode" />
-              <item name="osa1" type="462c0819:PsiDirectoryNode" />
-              <item name="unicafe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullStack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullStack" type="462c0819:PsiDirectoryNode" />
-              <item name="osa1" type="462c0819:PsiDirectoryNode" />
-              <item name="unicafe" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fullStack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fullStack" type="462c0819:PsiDirectoryNode" />
-              <item name="osa2" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1SpyhA4YXszQHNl4P5bPCnAmyH1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.eslint.settings.ESLintSettingsPage" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/osa4/blogilista" />
+      <recent name="$PROJECT_DIR$/osa4/part3-notes-backend" />
+      <recent name="$PROJECT_DIR$/osa2/hiekkis2/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/osa2/maiden_tiedott" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:3003/api/blogs/5dcd5833a0b85f2332af33cd" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6IjVkY2QzZDE2OTlhYTBiNmRjZWZlNDQ5MCIsImlhdCI6MTU3MzczOTA0MX0.DJ-seVEEaUnvYjJZY6cUYkYZ-CPPX3LIia5lXZHNC7Q" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;user&quot;,&#10;  &quot;password&quot;: &quot;password&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/blogs" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6IjVkY2QzZDE2OTlhYTBiNmRjZWZlNDQ5MCIsImlhdCI6MTU3MzczODUyM30.hPyJ5dJy471axvTzYDsMoLwCmtA6nTjTQJ-jTqwjtMU" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;title&quot;: &quot;blog added with signed in user, 2. try&quot;,&#10;  &quot;author&quot;: &quot;some user&quot;,&#10;  &quot;url&quot;: &quot;www.something.gov&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/blogs" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="bearer eyJhbGciOiJII1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6IjVkY2QzZDE2OTlhYTBiNmRjZWZlNDQ5MCIsImlhdCI6MTU3MzczNzE0NX0.0EtTRV6GOT5z2xCfZx6q6bi_YQGPve-BDG49d3qFjPM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;title&quot;: &quot;blog added with signed in user, 2. try&quot;,&#10;  &quot;author&quot;: &quot;some user&quot;,&#10;  &quot;url&quot;: &quot;www.something.gov&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/blogs" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6IjVkY2QzZDE2OTlhYTBiNmRjZWZlNDQ5MCIsImlhdCI6MTU3MzczNzE0NX0.0EtTRV6GOT5z2xCfZx6q6bi_YQGPve-BDG49d3qFjPM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;title&quot;: &quot;blog added with signed in user, 2. try&quot;,&#10;  &quot;author&quot;: &quot;some user&quot;,&#10;  &quot;url&quot;: &quot;www.something.gov&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/blogs" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6IjVkY2QzZDE2OTlhYTBiNmRjZWZlNDQ5MCIsImlhdCI6MTU3MzczNzE0NX0.0EtTRV6GOT5z2xCfZx6q6bi_YQGPve-BDG49d3qFjPM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;title&quot;: &quot;blog added with signed in user&quot;,&#10;  &quot;author&quot;: &quot;some user&quot;,&#10;  &quot;url&quot;: &quot;www.something.gov&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;user&quot;,&#10;  &quot;name&quot;: &quot;name&quot;,&#10;  &quot;password&quot;: &quot;password&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/blogs" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6IjVkY2QzZDE2OTlhYTBiNmRjZWZlNDQ5MCIsImlhdCI6MTU3MzczMjE3MX0.z4INpNoWTCRRLpn-sAA1EhrBsTh043_KgDQIlD4W2a0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;title&quot;: &quot;blog added with signed in user&quot;,&#10;  &quot;author&quot;: &quot;some user&quot;,&#10;  &quot;url&quot;: &quot;www.something.gov&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/blogs" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6IjVkY2QzZDE2OTlhYTBiNmRjZWZlNDQ5MCIsImlhdCI6MTU3MzczMTc5MH0.OaHgIeAs_UfSbEqDoA3ny2sAsMSC7kAQCrTi8xUnnbM" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;title&quot;: &quot;blog added with signed in user&quot;,&#10;  &quot;author&quot;: &quot;some user&quot;,&#10;  &quot;url&quot;: &quot;www.something.gov&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/blogs" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;title&quot;: &quot;Blog3&quot;,&#10;  &quot;author&quot;: &quot;author3&quot;,&#10;  &quot;url&quot;: &quot;www.url.fi&quot;,&#10;  &quot;userId&quot;: &quot;5dcd133f20f50de52ecb81c0&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;tomten&quot;,&#10;  &quot;name&quot;: &quot;Nils Holgersson&quot;,&#10;  &quot;password&quot;: &quot;ekz&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;tomten&quot;,&#10;  &quot;name&quot;: &quot;Nils Holgersson&quot;,&#10;  &quot;password&quot;: &quot;ek&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;tomten&quot;,&#10;  &quot;name&quot;: &quot;Nils Holgersson&quot;,&#10;  &quot;password&quot;: &quot;&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;julgubben&quot;,&#10;  &quot;name&quot;: &quot;Monsieur Nicholas&quot;,&#10;  &quot;password&quot;: &quot;urheilukenTTa&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;kakezu&quot;,&#10;  &quot;name&quot;: &quot;Katri Rasio&quot;,&#10;  &quot;password&quot;: &quot;jouluPukk1&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -139,13 +378,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/osa1/kurssitiedot/kurssitiedot/src/index.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="HTTP Request.scratch#8">
+    <configuration name="http-requests-log#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" index="2">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" index="2">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" index="3">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" index="4">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch#8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch.http" index="8">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="HTTP Request.scratch#8" />
+        <item itemvalue="HTTP Request.scratch#3" />
+        <item itemvalue="HTTP Request.scratch#4" />
+        <item itemvalue="HTTP Request.scratch#2" />
+        <item itemvalue="HTTP Request.http-requests-log#2" />
       </list>
     </recent_temporary>
   </component>
@@ -162,92 +417,74 @@
       <workItem from="1561827667077" duration="8499000" />
       <workItem from="1567405762526" duration="7000" />
       <workItem from="1568737997981" duration="7000" />
-      <workItem from="1571824841505" duration="17121000" />
+      <workItem from="1571824841505" duration="17559000" />
+      <workItem from="1571918116557" duration="21561000" />
+      <workItem from="1572274833370" duration="51000" />
+      <workItem from="1572274952445" duration="19836000" />
+      <workItem from="1572513210620" duration="15031000" />
+      <workItem from="1572536905491" duration="11353000" />
+      <workItem from="1572601036790" duration="421000" />
+      <workItem from="1572601525162" duration="86000" />
+      <workItem from="1572601622982" duration="5728000" />
+      <workItem from="1572610939977" duration="13923000" />
+      <workItem from="1572855244926" duration="10518000" />
+      <workItem from="1573039206039" duration="24000" />
+      <workItem from="1573039257667" duration="4496000" />
+      <workItem from="1573116395329" duration="1003000" />
+      <workItem from="1573120378555" duration="118000" />
+      <workItem from="1573121240214" duration="6707000" />
+      <workItem from="1573220261057" duration="3868000" />
+      <workItem from="1573235148546" duration="7629000" />
+      <workItem from="1573327395374" duration="457000" />
+      <workItem from="1573330929992" duration="4637000" />
+      <workItem from="1573393289112" duration="56929000" />
+      <workItem from="1573646625653" duration="16746000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25634000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="884" height="900" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" weight="0.26187718" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.50120485" side_tool="true" weight="0.26187718" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32901555" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/osa0/0.4uusiMuistiinpano" />
-    <entry file="file://$PROJECT_DIR$/../misantrooppi/js/master.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/osa1/hiekkalaatikko/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/osa1/kurssitiedot/kurssitiedot/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/osa1/kurssitiedot/kurssitiedot/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/osa1/kurssitiedot/kurssitiedot/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/osa1/unicafe/public/logo192.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/osa1/hiekkalaatikko/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="18" lean-forward="true" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/osa1/unicafe/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/osa3/part3-notes-backend/mongo.js</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/osa3/part3-notes-backend/index.js</url>
+          <line>49</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/osa3/part3-notes-backend/index.js</url>
+          <line>85</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/osa3/part3-notes-backend/index.js</url>
+          <line>98</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

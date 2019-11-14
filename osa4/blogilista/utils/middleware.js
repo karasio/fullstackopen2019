@@ -1,25 +1,53 @@
+const logger = require('./logger')
+
 const requestLogger = (request, response, next) => {
-  console.log('Method:', request.method);
-  console.log('Path:  ', request.path);
-  console.log('Body:  ', request.body);
-  console.log('------');
+  logger.info('Method:', request.method);
+  logger.info('Path:  ', request.path);
+  logger.info('Body:  ', request.body);
+  logger.info('---');
   next();
-};
+}
 
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' });
 };
 
 const errorHandler = (error, request, response, next) => {
-  console.error(error.message);
+  logger.error(error.message);
 
   if (error.name === 'CastError' && error.kind === 'ObjectId') {
-    return response.status(400).send({ error: 'malformed id' });
+    return response.status(400).send({ error: 'malformatted id' });
   } else if (error.name === 'ValidationError') {
     return response.status(400).json({ error: error.message });
+  } else if (error.name === 'JsonWebTokenError') {
+    return response.status(401).json({
+      error: 'invalid token'
+    });
   }
 
   next(error);
 };
 
-module.exports = {requestLogger, unknownEndpoint, errorHandler};
+//4.20* pitäs tuua tänne getTokenFrom
+const tokenExtractor = (request, response, next) => {
+  console.log('middlewaren rivi 33');
+  const authorization = request.get('authorization');
+  console.log('authorization', authorization);
+  if (authorization && authorization.toLowerCase().startsWith('bearer ')) {
+    console.log('täällä');
+    console.log(authorization.substring(7));
+    request.token = authorization.substring(7);
+  } else {
+    console.log('tokenista tulossa null');
+    request.token = null;
+  }
+  next();
+
+};
+
+module.exports = {
+  requestLogger,
+  unknownEndpoint,
+  errorHandler,
+  tokenExtractor
+};
