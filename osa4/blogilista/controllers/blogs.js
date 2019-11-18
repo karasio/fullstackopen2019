@@ -86,6 +86,7 @@ blogsRouter.post('/', async (request, response, next) => {
 
 blogsRouter.delete('/:id', async (request, response, next) => {
   const blog = await Blog.findById(request.params.id);
+  console.log('päästäänkö tänne ikinä frontin kans');
 
   try {
     const decodedToken = jwt.verify(request.token, process.env.SECRET);
@@ -100,8 +101,11 @@ blogsRouter.delete('/:id', async (request, response, next) => {
     if(blog.user.toString() === user.id.toString()) {
       try {
         await Blog.findByIdAndRemove(request.params.id);
+        console.log('päästäänkö tänne ikinä frontin kans');
         response.status(204).end();
+        console.log('back rivi 106');
       } catch (exception) {
+        console.log('vai joutuuks tänne');
         next(exception);
       }
     } else {

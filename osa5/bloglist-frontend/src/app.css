@@ -1,5 +1,7 @@
+
+
 div {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 p {
@@ -28,4 +30,9 @@ p {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    margin-top:10px;
 }

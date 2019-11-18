@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6775e6c5-8f3a-478a-bc82-4bfcbbbc46e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/katriaho.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/osa4/blogilista/node_modules/@babel/parser/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/osa4/blogilista/node_modules/@babel/parser/typings/babel-parser.d.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/osa4/blogilista/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
@@ -1681,25 +1682,16 @@
       <change afterPath="$PROJECT_DIR$/osa4/blogilista/node_modules/supertest/lib/agent.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/osa4/blogilista/node_modules/supertest/lib/test.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/osa4/blogilista/node_modules/supertest/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/lunttilappu" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/components/Blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/components/CreateForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/components/Notification.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/services/blogs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/services/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/components/LoginForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/components/Togglable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/osa2/notes-frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa2/notes-frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/blogilista/controllers/blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/controllers/blogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa4/blogilista/utils/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa4/blogilista/utils/middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa5/bloglist-frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa5/bloglist-frontend/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa5/bloglist-frontend/src/components/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/components/Blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa5/bloglist-frontend/src/components/CreateForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/components/CreateForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osa5/bloglist-frontend/src/services/blogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/osa5/bloglist-frontend/src/services/blogs.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1739,7 +1731,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1759,6 +1751,38 @@
     <option name="REQUEST_HISTORY">
       <list>
         <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;user&quot;,&#10;  &quot;password&quot;: &quot;password&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3003/api/users" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;KATRIusername&quot;,&#10;  &quot;name&quot;: &quot;KATRIname&quot;,&#10;  &quot;password&quot;: &quot;password&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
           <option name="httpMethod" value="DELETE" />
           <option name="urlBase" value="http://localhost:3003/api/blogs/5dcd5833a0b85f2332af33cd" />
           <option name="urlPath" value="" />
@@ -1775,22 +1799,6 @@
             </list>
           </option>
           <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3003/api/login" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;username&quot;: &quot;user&quot;,&#10;  &quot;password&quot;: &quot;password&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -2060,8 +2068,8 @@
       <list>
         <item itemvalue="HTTP Request.scratch#8" />
         <item itemvalue="HTTP Request.scratch#3" />
-        <item itemvalue="HTTP Request.scratch#4" />
         <item itemvalue="HTTP Request.scratch#2" />
+        <item itemvalue="HTTP Request.scratch#4" />
         <item itemvalue="HTTP Request.http-requests-log#2" />
       </list>
     </recent_temporary>
@@ -2102,7 +2110,8 @@
       <workItem from="1573393289112" duration="56929000" />
       <workItem from="1573646625653" duration="17311000" />
       <workItem from="1573800843539" duration="1473000" />
-      <workItem from="1573820411221" duration="13153000" />
+      <workItem from="1573820411221" duration="25035000" />
+      <workItem from="1574087163304" duration="5578000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,14 @@
 import React from 'react'
 
-const createForm = ({title, setTitle, author, setAuthor, url, setUrl, addBlog}) => {
-
+const createForm = ({
+  title,
+  setTitle,
+  author,
+  setAuthor,
+  url,
+  setUrl,
+  addBlog
+}) => {
   return (
       <form onSubmit={addBlog}>
         <div className='createNew'>

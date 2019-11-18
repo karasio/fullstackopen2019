@@ -30,15 +30,10 @@ const errorHandler = (error, request, response, next) => {
 
 //4.20* pitäs tuua tänne getTokenFrom
 const tokenExtractor = (request, response, next) => {
-  console.log('middlewaren rivi 33');
   const authorization = request.get('authorization');
-  console.log('authorization', authorization);
   if (authorization && authorization.toLowerCase().startsWith('bearer ')) {
-    console.log('täällä');
-    console.log(authorization.substring(7));
     request.token = authorization.substring(7);
   } else {
-    console.log('tokenista tulossa null');
     request.token = null;
   }
   next();
