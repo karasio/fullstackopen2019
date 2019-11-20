@@ -8,7 +8,7 @@ import Notification from './components/Notification';
 import Togglable from './components/Togglable';
 
 const App = () => {
-  const [notification, setNotification] = useState({msg: null, sort: null});
+  const [notification, setNotification] = useState({ msg: null, sort: null });
   const [blogs, setBlogs] = useState([]);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -30,8 +30,8 @@ const App = () => {
       blogService.setToken(user.token);
     }
     blogService
-        .getAll()
-        .then(initialBlogs => sortAndSetBlogs(initialBlogs))
+      .getAll()
+      .then(initialBlogs => sortAndSetBlogs(initialBlogs));
   }, []);
 
   const sortAndSetBlogs = (preSortBlogs) => {
@@ -45,7 +45,7 @@ const App = () => {
     try {
       const user = await loginService.login({ username, password });
       window.localStorage.setItem(
-          'loggedBloglistUser', JSON.stringify(user)
+        'loggedBloglistUser', JSON.stringify(user)
       );
       setUser(user);
       blogService.setToken(user.token);
@@ -53,9 +53,9 @@ const App = () => {
       setPassword('');
 
     } catch (exception) {
-      setNotification({msg: 'wrong credentials', sort: 'error'});
+      setNotification({ msg: 'wrong credentials', sort: 'error' });
       setTimeout(() => {
-        setNotification({msg: null, sort: null});
+        setNotification({ msg: null, sort: null });
       }, 5000);
     }
   };
@@ -80,19 +80,19 @@ const App = () => {
     };
 
     blogService
-    .create(blogObject)
-    .then(() => {
-      blogService
-        .getAll()
-        .then(freshBlogs => sortAndSetBlogs(freshBlogs));
-      setTitle('');
-      setAuthor('');
-      setUrl('');
-      setNotification({ msg: `${title} by ${author} added`, sort: 'info' });
-      setTimeout(() => {
-        setNotification({msg: null, sort: null})
-      }, 5000);
-    })
+      .create(blogObject)
+      .then(() => {
+        blogService
+          .getAll()
+          .then(freshBlogs => sortAndSetBlogs(freshBlogs));
+        setTitle('');
+        setAuthor('');
+        setUrl('');
+        setNotification({ msg: `${title} by ${author} added`, sort: 'info' });
+        setTimeout(() => {
+          setNotification({ msg: null, sort: null });
+        }, 5000);
+      });
   };
 
 
@@ -105,20 +105,20 @@ const App = () => {
       blogService
         .remove(id)
         .then(() => {
-            setNotification({msg: `${blogToRemove.title} by ${author} was removed`, sort: 'info'});
-            setTimeout(() => {
-              setNotification({msg: null, sort: null});
-            }, 5000);
-            blogService
-              .getAll()
-              .then(freshBlogs => sortAndSetBlogs(freshBlogs));
+          setNotification({ msg: `${blogToRemove.title} by ${author} was removed`, sort: 'info' });
+          setTimeout(() => {
+            setNotification({ msg: null, sort: null });
+          }, 5000);
+          blogService
+            .getAll()
+            .then(freshBlogs => sortAndSetBlogs(freshBlogs));
         })
         .catch(error => {
           console.log('Virhe removessa', error.response.data.error);
-        setNotification({msg: error.response.data.error, sort: "error"});
-        setTimeout(() => {
-          setNotification({msg: null, sort: null})
-        }, 5000)
+          setNotification({ msg: error.response.data.error, sort: 'error' });
+          setTimeout(() => {
+            setNotification({ msg: null, sort: null });
+          }, 5000);
         });
     }
   };
@@ -136,94 +136,94 @@ const App = () => {
     console.log('this blog was liked now with added likes', blogLiked);
 
     blogService
-        .update(id, blogLiked)
-        .then(response => {
-          blogService
-            .getAll()
-            .then(freshBlogs => sortAndSetBlogs(freshBlogs));
-          setNotification({ msg: `${response.title} was liked!`, sort: 'info'})
-          setTimeout(() => {
-            setNotification({msg: null, sort: null});
-          }, 5000);
-    })
+      .update(id, blogLiked)
+      .then(response => {
+        blogService
+          .getAll()
+          .then(freshBlogs => sortAndSetBlogs(freshBlogs));
+        setNotification({ msg: `${response.title} was liked!`, sort: 'info' });
+        setTimeout(() => {
+          setNotification({ msg: null, sort: null });
+        }, 5000);
+      });
 
   };
 
   const rows = () =>
-      blogs.map(blog => {
+    blogs.map(blog => {
     //console.log('rowsin tööt');
-    return (
+      return (
         <Blog
-            key={blog.id}
-            blog={blog}
-            id={blog.id}
-            title={blog.title}
-            author={blog.author}
-            url = {blog.url}
-            likes = {blog.likes}
-            blogUser = {blog.user}
-            removeBlog = {removeBlog}
-            likeBlog = {likeBlog}
-            user = {user}
+          key={blog.id}
+          blog={blog}
+          id={blog.id}
+          title={blog.title}
+          author={blog.author}
+          url = {blog.url}
+          likes = {blog.likes}
+          blogUser = {blog.user}
+          removeBlog = {removeBlog}
+          likeBlog = {likeBlog}
+          user = {user}
         />
-    )
-  });
+      );
+    });
 
   const loginForm = () => (
-      <div>
-        <h1>log in to application</h1>
-        <form onSubmit={handleLogin}>
-          <div>
+    <div>
+      <h1>log in to application</h1>
+      <form onSubmit={handleLogin}>
+        <div>
             username
-            <input
-                type='text'
-                value={username}
-                name={'Username'}
-                onChange={({ target }) => setUsername(target.value)}
-            />
-          </div>
-          <div>
+          <input
+            type='text'
+            value={username}
+            name={'Username'}
+            onChange={({ target }) => setUsername(target.value)}
+          />
+        </div>
+        <div>
             password
-            <input
-                type='password'
-                value={password}
-                name='Password'
-                onChange={({ target }) => setPassword(target.value)}
-            />
-          </div>
-          <button type='submit'>login</button>
-        </form>
-        <Notification message={notification} />
-      </div>
+          <input
+            type='password'
+            value={password}
+            name='Password'
+            onChange={({ target }) => setPassword(target.value)}
+          />
+        </div>
+        <button type='submit'>login</button>
+      </form>
+      <Notification message={notification} />
+    </div>
   );
 
   const blogView = () => (
+    <div>
       <div>
-        <div>
-          <h1>blogs</h1>
-          <Notification message={notification} />
-        </div>
-        <div>
-          {user.name} is logged in { user !== null && logoutButton() }
-        </div>
-        <div>
-          <Togglable buttonLabel='new blog' ref={blogFormRef}>
-            <h1>create new</h1>
-            <CreateForm
-                title = {title}
-                setTitle={setTitle}
-                author={author}
-                setAuthor={setAuthor}
-                url={url}
-                setUrl={setUrl}
-                addBlog={addBlog}
-            />
-          </Togglable>
-        </div>
-        <div>
-          {rows()}
-        </div>
+        <h1>blogs</h1>
+        <Notification message={notification} />
       </div>
+      <div>
+        {user.name} is logged in { user !== null && logoutButton() }
+      </div>
+      <div>
+        <Togglable buttonLabel='new blog' ref={blogFormRef}>
+          <h1>create new</h1>
+          <CreateForm
+            title = {title}
+            setTitle={setTitle}
+            author={author}
+            setAuthor={setAuthor}
+            url={url}
+            setUrl={setUrl}
+            addBlog={addBlog}
+          />
+        </Togglable>
+      </div>
+      <div>
+        {rows()}
+      </div>
+    </div>
   );
 
 
