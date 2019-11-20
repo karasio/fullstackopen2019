@@ -1,6 +1,6 @@
 import React from 'react'
 
-const createForm = ({
+const CreateForm = ({
   title,
   setTitle,
   author,
@@ -43,5 +43,5 @@ const createForm = ({
   )
 };
 
-export default createForm;
+export default CreateForm;
 

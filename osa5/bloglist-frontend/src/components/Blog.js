@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Blog = ({ id, title, author, url, likes, blogUser, removeBlog, likeBlog, user }) => {
+const Blog = ({ id, blog, title, author, url, likes, blogUser, removeBlog, likeBlog, user }) => {
 
   const [detailsVisible, setDetailsVisible] = useState(false);
   const hideWhenVisible = { display: detailsVisible ? 'none' : '' };
@@ -28,7 +28,7 @@ const Blog = ({ id, title, author, url, likes, blogUser, removeBlog, likeBlog, u
             <p>{url}</p>
             <p>{likes} likes
               <button onClick={() => likeBlog(id)}>like</button></p>
-            <p>added by {blogUser.name}</p>
+            { blogUser.name !== undefined ? <p>added by {blogUser.name}</p> : <p>no idea who added this</p> }
           </div>
           { blogUser.username === user.username ? <button onClick={() => removeBlog(id)}>remove</button> : <></> }
         </div>

@@ -19,21 +19,25 @@ const App = () => {
   const blogFormRef = React.createRef();
 
   useEffect(() => {
-    sortBlogs(blogs)
-  }, [blogs]);
+    console.log('user muuttui', user);
+  }, [user]);
 
   useEffect(() => {
     const loggerUserJSON = window.localStorage.getItem('loggedBloglistUser');
     if(loggerUserJSON) {
       const user = JSON.parse(loggerUserJSON);
-      //console.log('useEffectissä user', user);
       setUser(user);
       blogService.setToken(user.token);
     }
     blogService
         .getAll()
-        .then(initialBlogs => setBlogs(initialBlogs))
+        .then(initialBlogs => sortAndSetBlogs(initialBlogs))
   }, []);
+
+  const sortAndSetBlogs = (preSortBlogs) => {
+    preSortBlogs.sort((a, b) => (b.likes - a.likes));
+    setBlogs(preSortBlogs);
+  };
 
   const handleLogin = async (event) => {
     event.preventDefault();
@@ -42,10 +46,12 @@ const App = () => {
       const user = await loginService.login({ username, password });
       window.localStorage.setItem(
           'loggedBloglistUser', JSON.stringify(user)
-      )
+      );
       setUser(user);
+      blogService.setToken(user.token);
       setUsername('');
       setPassword('');
+
     } catch (exception) {
       setNotification({msg: 'wrong credentials', sort: 'error'});
       setTimeout(() => {
@@ -58,11 +64,14 @@ const App = () => {
     event.preventDefault();
     window.localStorage.clear();
     setUser(null);
+    setUsername('');
+    setPassword('');
   };
 
   const addBlog = (event) => {
     event.preventDefault();
 
+    console.log('addBlog user = ', user);
     const blogObject = {
       title: title,
       author: author,
@@ -72,8 +81,10 @@ const App = () => {
 
     blogService
     .create(blogObject)
-    .then(data => {
-      setBlogs(blogs.concat(data));
+    .then(() => {
+      blogService
+        .getAll()
+        .then(freshBlogs => sortAndSetBlogs(freshBlogs));
       setTitle('');
       setAuthor('');
       setUrl('');
@@ -87,10 +98,7 @@ const App = () => {
 
   // 5.9* BLOGIN POISTAMINEN
   const removeBlog = (id) => {
-    //console.log(id);
     const blogToRemove = blogs.find(b => b.id === id);
-    //console.log('this will be removed',blogToRemove);
-
     const sureToDelete = window.confirm(`Delete ${blogToRemove.title}?`);
 
     if(sureToDelete) {
@@ -103,10 +111,10 @@ const App = () => {
             }, 5000);
             blogService
               .getAll()
-              .then(blogs => setBlogs(blogs));
+              .then(freshBlogs => sortAndSetBlogs(freshBlogs));
         })
         .catch(error => {
-          console.log('VIKA OLI TÄSÄ', error.response.data.error);
+          console.log('Virhe removessa', error.response.data.error);
         setNotification({msg: error.response.data.error, sort: "error"});
         setTimeout(() => {
           setNotification({msg: null, sort: null})
@@ -130,9 +138,9 @@ const App = () => {
     blogService
         .update(id, blogLiked)
         .then(response => {
-          const blogsWithoutLiked = blogs.filter(b => b.id !== response.id);
-          //console.log(blogsWithoutLiked);
-          setBlogs(blogsWithoutLiked.concat(response));
+          blogService
+            .getAll()
+            .then(freshBlogs => sortAndSetBlogs(freshBlogs));
           setNotification({ msg: `${response.title} was liked!`, sort: 'info'})
           setTimeout(() => {
             setNotification({msg: null, sort: null});
@@ -141,18 +149,13 @@ const App = () => {
 
   };
 
-  const sortBlogs = (initialBlogs) => {
-    initialBlogs.sort((a, b) => (b.likes - a.likes));
-    //console.log(initialBlogs);
-    setBlogs(initialBlogs);
-  }
-
   const rows = () =>
       blogs.map(blog => {
-    //console.log('rowsin blog', blog);
+    //console.log('rowsin tööt');
     return (
         <Blog
             key={blog.id}
+            blog={blog}
             id={blog.id}
             title={blog.title}
             author={blog.author}
@@ -232,6 +235,8 @@ const App = () => {
 
   return (
       <>
+        {/*<button onClick={() => console.log('user on ', user)}>KUKA KÄYTTÄÄ</button>*/}
+        {/*<button onClick={() => console.log('blogsissa', blogs)}>LOGGAA BLOGI</button>*/}
         {user === null ? loginForm() : blogView()}
       </>
   );
