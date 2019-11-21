@@ -16,13 +16,13 @@ const Blog = ({ id, title, author, url, likes, blogUser, removeBlog, likeBlog, u
   };
 
   return (
-    <ul style={blogStyle}>
-      <div style={hideWhenVisible}>
+    <div style={blogStyle}>
+      <div style={hideWhenVisible} className='blogListItem'>
         <p onClick={() => setDetailsVisible(true)}>
           {title} {author}
         </p>
       </div>
-      <div style={showWhenVisible}>
+      <div style={showWhenVisible} className='extraInfo'>
         <div onClick={() => setDetailsVisible(false)}>
           <p>{title} {author}</p>
           <p>{url}</p>
@@ -32,7 +32,7 @@ const Blog = ({ id, title, author, url, likes, blogUser, removeBlog, likeBlog, u
         </div>
         { blogUser.username === user.username ? <button onClick={() => removeBlog(id)}>remove</button> : <></> }
       </div>
-    </ul>
+    </div>
   );
 };
 
