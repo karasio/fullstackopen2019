@@ -23,9 +23,9 @@ const App = () => {
   }, [user]);
 
   useEffect(() => {
-    const loggerUserJSON = window.localStorage.getItem('loggedBloglistUser');
-    if(loggerUserJSON) {
-      const user = JSON.parse(loggerUserJSON);
+    const loggedUserJSON = window.localStorage.getItem('loggedBloglistUser');
+    if(loggedUserJSON) {
+      const user = JSON.parse(loggedUserJSON);
       setUser(user);
       blogService.setToken(user.token);
     }
@@ -225,7 +225,6 @@ const App = () => {
       </div>
     </div>
   );
-
 
   const logoutButton = () => (
       <>
