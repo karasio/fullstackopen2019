@@ -1,0 +1,37 @@
+{
+  "notes": [
+    {
+      "content": "custom-hooks are awesome!",
+      "id": 1
+    },
+    {
+      "content": "best feature ever <3",
+      "id": 2
+    },
+    {
+      "content": "jee",
+      "id": 3
+    },
+    {
+      "content": "Hip hip",
+      "id": 4
+    }
+  ],
+  "persons": [
+    {
+      "name": "mluukkai",
+      "number": "040-5483923",
+      "id": 1
+    },
+    {
+      "name": "katri",
+      "number": "01000000",
+      "id": 2
+    },
+    {
+      "name": "Allu",
+      "number": "0504499888",
+      "id": 3
+    }
+  ]
+}
