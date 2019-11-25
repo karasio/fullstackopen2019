@@ -16,7 +16,7 @@ module.exports = {
 		"sourceType": "module"
 	},
 	"plugins": [
-		"react", "jest"
+		"react", "jest", "react-hooks"
 	],
 	"settings": {
 		"react": {
@@ -24,6 +24,7 @@ module.exports = {
 		}
 	},
 	"rules": {
+		"react-hooks/rules-of-hooks": "error",
 		"indent": [
 			"error",
 			2
