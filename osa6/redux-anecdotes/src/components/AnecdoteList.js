@@ -10,7 +10,7 @@ const AnecdoteList = ({ store }) => {
                 {anecdote.content}
               </div>
               <div>
-                has {anecdote.votes}
+                has {anecdote.votes} votes
                 <button onClick={() => store.dispatch(voteAnecdote(anecdote.id))}>vote</button>
               </div>
             </div>
