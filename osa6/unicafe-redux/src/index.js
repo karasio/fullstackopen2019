@@ -6,29 +6,10 @@ import reducer from './reducer'
 const store = createStore(reducer);
 
 const App = () => {
-  const good = () => {
-    store.dispatch({
-      type: 'GOOD'
-    })
-  };
-
-  const ok = () => {
-    store.dispatch({
-      type: 'OK'
-    })
-  };
-
-  const bad = () => {
-    store.dispatch({
-      type: 'BAD'
-    })
-  };
-
-  const zero = () => {
-    store.dispatch({
-      type: 'ZERO'
-    })
-  };
+  const good = () => {store.dispatch({ type: 'GOOD' })};
+  const ok = () => {store.dispatch({ type: 'OK' })};
+  const bad = () => {store.dispatch({ type: 'BAD' })};
+  const zero = () => {store.dispatch({ type: 'ZERO' })};
 
   return (
       <div>
