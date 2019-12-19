@@ -1,27 +1,28 @@
 import React from 'react';
 import { voteAnecdote } from '../reducers/anecdoteReducer';
-import { notificationChange } from '../reducers/notificationReducer';
+import { setNotificationOn } from '../reducers/notificationReducer';
 import { connect } from 'react-redux';
 
 const AnecdoteList = (props) => {
 
-  const handleVote = (id) => {
-    props.voteAnecdote(id);
+  const handleVote = async (id) => {
     const votedAnecdote = props.visibleAnecdotes.find(anecdote => anecdote.id === id);
-    props.notificationChange(`voted "${votedAnecdote.content}"`);
-    setTimeout(() => {
-      props.notificationChange(null);
-    }, 5000)
+    props.voteAnecdote(id, votedAnecdote);
+    props.setNotificationOn(`you voted "${votedAnecdote.content}"`, 5);
   };
 
   const style = {
     marginLeft: 5
   };
 
+  const boxed = {
+    border: "3px solid rgb(100, 212, 212)"
+  };
+
   return (
       <div>
         {props.visibleAnecdotes.map(anecdote =>
-            <div key={anecdote.id}>
+            <div key={anecdote.id} style={boxed}>
               <div>
                 {anecdote.content}
               </div>
@@ -36,6 +37,7 @@ const AnecdoteList = (props) => {
 };
 
 const anecdotesToShow = ({ anecdotes, filter }) => {
+  // console.log('anecdotes', anecdotes, 'filterValue', filter, typeof filter);
   return anecdotes
   .sort((a, b) => (b.votes - a.votes))
   .filter(anecdote => anecdote.content.includes(filter));
@@ -50,7 +52,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
   voteAnecdote,
-  notificationChange,
+  setNotificationOn,
 };
 
 export default connect(
