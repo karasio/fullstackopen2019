@@ -51,4 +51,4 @@ export const voteAnecdote = (id, votedAnecdote) => {
   }
 };
 
-export default reducer
+export default reducer;
